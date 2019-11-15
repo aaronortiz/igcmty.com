@@ -1,0 +1,86 @@
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  padding:    0px;
+  font-size: 18px;
+}
+
+
+#nav {
+  width:            400px;
+  margin:           0px auto;
+  padding:          0px 0px;
+
+  color:            #110;
+}
+
+#zebra_table {
+  overflow:       auto;
+  float:          left;
+}
+
+
+#zebra_table table {
+  border-collapse: collapse;
+  border:          1px solid #d9d9d9;
+}
+
+
+#zebra_table thead tr {
+  position:        relative;
+}
+
+html>body #zebra_table thead tr {
+  display:         block;
+  
+}
+
+#zebra_table tbody {
+  height:     210px;
+  display:    block;
+  overflow:   auto;
+  width:      100%;
+
+}
+
+#zebra_table table tr {
+  background: white;
+}
+
+#zebra_table td {
+  border-right: 1px solid #d9d9d9;
+}
+ 
+#zebra_table th {
+  padding:          .2em .5em;
+  background:       url(../img/grey_gradient.png) top left repeat-x;
+  background-color: #bbb;
+  text-align:       left;
+  color:            #000;
+}
+
+#zebra_table a {
+  padding:          .2em .5em;
+  display:          block;
+  color:            black;
+  text-decoration:  none;
+}
+
+#zebra_table tr:hover td {
+  background:       #3d80df;
+}
+
+#zebra_table tr:hover td a {
+  color:            white;
+}
+
+#pie_pagina {
+  margin:           0em 1em;
+  bottom:           1em;
+  position:         absolute; 
+  color:            #aaa;
+}

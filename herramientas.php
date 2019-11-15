@@ -1,0 +1,121 @@
+<?php
+
+  header("location: admin/index.php");
+
+  include 'encabezado.php';
+
+  include_once("Data/MySQL.php");
+
+  $_SESSION["Username"] = "aeortizc_aeortiz";
+  $_SESSION["Password"] = "WhoAmI76";
+  
+  $rsSeries      = Recordset("SELECT * FROM series");
+  $rsExpositores = Recordset("SELECT * FROM expositores");
+  
+  array_reverse($rsSeries);
+  
+?>
+
+  <div id="texto">
+  <div id="encabezado"></div>
+
+<h1>Herramientas Para Configurar Conferencias</h1>
+
+<h2>Crear nueva serie</h2>
+
+<form action="admin/crear_nueva_serie.php" method="post">
+  <fieldset>
+    <p>T&iacute;tulo:<br> 
+         <input name="titulo" type="text" size="32" maxlength="64"></p>
+    <p>Descripci&oacute;n:<br> 
+         <textarea name="descripcion" cols="32" rows="3"></textarea>
+    </p>
+  </fieldset>
+  <p><input type="submit" value="Crear Nueva Serie"></p>
+</form>
+
+<h2>Crear nuevo mensaje</h2>
+
+<form action="admin/crear_nuevo_mensaje.php" method="post">
+  <fieldset>
+    <p>Serie: <br><select name="serie"><?php
+         
+      foreach($rsSeries as $Serie){
+        print "<option value=\"" . $Serie["id_serie"] . "\">" . 
+        htmlentities($Serie["serie"], ENT_COMPAT, 'utf8') . "</option>\n";
+      }
+    
+    ?></select></p>
+    <p>T&iacute;tulo: <br>
+      <input type="text" name="titulo" size="32" maxlength="64">
+    </p>
+    
+    <p>Fecha:<br>
+      <select name="dia">
+        <?php
+          for ($i=1; $i<32; $i++){
+            $dia = date("j");
+            if($i != $dia)
+              printf("<option value=\"%d\">%02d</option>\n", $i, $i);
+            else
+              printf("<option value=\"%d\" selected>%02d</option>\n", $i, $i);
+          }
+        ?>
+      </select>
+      <select name="mes">
+        <?php
+          for ($i=1; $i<13; $i++){
+            $mes = date("m");
+            if($i != $mes)
+              printf("<option value=\"%d\">%02d</option>\n", $i, $i);
+            else
+              printf("<option value=\"%d\" selected>%02d</option>\n", $i, $i);
+          }
+        ?>
+      </select>
+      <select name="anio">
+        <?php
+          for ($i=2009; $i>=2007; $i--){
+            $anio = date("y");
+            if($i != $anio)
+              printf("<option value=\"%d\">%04d</option>\n", $i, $i);
+            else
+              printf("<option value=\"%d\" selected>%04d</option>\n", $i, $i);
+  
+          }
+        ?>
+      </select>
+    </p>
+    
+    <p>Expositor: <br><select name="id_expositor"><?php    
+      foreach($rsExpositores as $Expositor){
+        print "<option value=\"" . $Expositor["id_expositor"] . "\">" . 
+        htmlentities($Expositor["nombres"], ENT_COMPAT, 'utf8') . ' ' .
+        htmlentities($Expositor["apellidos"], ENT_COMPAT, 'utf8') . "</option>\n";
+      }    
+    ?></select></p>      
+
+    <p>Resumen:<br>
+      <textarea name="resumen" rows="3" cols="64"></textarea>
+    </p>
+
+    <p>Claves de b&uacute;squeda:<br>
+      <input type="text" name="claves" size="64" maxlength="64">
+    </p>
+
+    <p>MP3:<br>
+      <input type="text" name="MP3" size="64" maxlength="128">
+    </p>
+  
+  </fieldset>
+  <p><input type="submit" value="Crear Nuevo Mensaje"></p>
+</form>
+
+  <div id="pie"></div>
+  </div>
+
+<?php
+
+  include 'pie.php';
+  
+?>

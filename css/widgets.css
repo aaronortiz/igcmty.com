@@ -1,0 +1,158 @@
+#slideshow_serie {
+  background: url(../img/round_rect_900x556.png) top center no-repeat;	
+  width:      900px;
+  height:     566px;
+  padding:    0px;
+  margin:     0px;
+}
+
+
+#front_media_center {
+  clear:  both;
+  width:  980px;
+  height: 303px;
+  margin: -10px 0px 0px;
+  background: url(../img/media_center_bg.png) top left no-repeat;
+}
+
+#front_media_center #message_list {
+
+  float: right;
+  width: 415px;
+  height: 263px;
+  margin: 20px 20px 30px 0px;
+  border: 0px solid #131313;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  
+}
+
+#vimeo_widget {
+  
+  width: 400px;
+  height: 300px;
+  float: left;
+  margin: 0px 0px 0px 70px;
+
+}
+
+#vimeo_widget h2 {
+  color: #fff;
+  text-align: center;
+  margin: 40px 0px 24px;
+  font-size: 32px;
+}
+
+
+#pictobrowser, #podcasts img, #gallery img {
+ margin: 10px;
+}
+
+#youtube_player, #gallery img, #podcasts img {
+  margin:     0px 10px;
+  height:     230px;
+  width:      273;
+  position:   relative;
+  top:        10px;
+}
+
+#igcmty_youtube, #podcasts, #gallery {
+  background: url(../img/round_rect_293x293.png) top center no-repeat;	
+  width:      293px;
+  height:     293px;
+  padding:    0px;
+  margin:     0px;
+}
+
+#igcmty_youtube p, #gallery p, #podcasts p{
+  margin:     20px 12px;
+  padding:    0px;
+  font-size:  12px;
+  text-align: center;
+}
+
+#igcmty_youtube, #podcasts {
+  float:      left;
+  margin:     0px 50px 10px 0px;
+}
+
+#podcasts {
+  overflow:       auto;
+}
+
+
+#podcasts table {
+  margin:          10px;
+  float:           left;
+/*  width:           273px;
+  height:          230px;*/
+  border-collapse: collapse;
+  border:          1px solid #d9d9d9;
+}
+
+html>body #podcasts table {
+  width:           271px; 
+}
+
+#podcasts thead tr {
+  position:        relative;
+}
+
+html>body #podcasts thead tr {
+  display:         block;
+  
+}
+
+#podcasts tbody {
+  height:     210px;
+  display:    block;
+  overflow:   auto;
+  width:      100%;
+
+}
+
+#podcasts table tr {
+  background: white;
+}
+
+#podcasts td {
+  border-right: 1px solid #d9d9d9;
+  width:        50%;
+}
+ 
+#podcasts th {
+  padding:          .2em .5em;
+  background:       url(../img/grey_gradient.png) top left repeat-x;
+  background-color: #bbb;
+  width:            136px;  
+  text-align:       left;
+  color:            #000;
+}
+
+#podcasts a {
+  padding:          .2em .5em;
+  display:          block;
+  color:            black;
+  text-decoration:  none;
+}
+
+#podcasts tr:hover td {
+  background:       #3d80df;
+}
+
+#podcasts tr:hover td a {
+  color:            white;
+}
+
+.Odd td {
+  background:       #f1f5fa;
+}
+
+
+#gallery {
+  float:      right;
+}
+
+#gallery a img, #podcasts a img {
+  border:     0px;
+}

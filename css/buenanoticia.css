@@ -1,0 +1,43 @@
+#buena_noticia {
+  width:      980px;
+  margin:     40px auto 0px;
+  padding:    20px 0px 3px;
+  background: #1a1a1a;
+}
+
+#buena_noticia h1 {
+  margin:     0em 0em 20px 0em;
+  color:      white;
+  font-size: 72px;
+  text-align: center;
+}
+
+#encabezado_oscuro {
+  width:      980px;
+  margin:     -70px -101px;
+  height:     20px;
+  background: url(../img/white_header.png) top left no-repeat;
+  position:   absolute;
+}
+
+
+#encabezado_oscuro {
+  margin:     -40px 0px 0px 0px;
+  background: url(../img/dark_header.png) top left no-repeat;
+}
+
+#large_video {
+  height:480px;
+  width:  640px;
+  background: black;
+  margin: 0px auto 50px;
+}
+
+#pie_oscuro {
+  width:      980px;
+  height:     20px;
+  clear:      both;
+  margin:     -10px auto 0px;
+  background: url(../img/dark_footer.png) top left no-repeat;
+}
+

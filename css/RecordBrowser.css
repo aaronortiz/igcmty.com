@@ -1,0 +1,140 @@
+#RecordBrowser {
+  width:            980px;
+  margin:           140px auto 8px;
+  background:       url(../img/RecordBrowserBackground.png) top left repeat-y;
+  background-color: #fff;
+}
+
+#RecordBrowser .title {
+  margin:           -100px 0px 0px 0px;
+  height:           100px;
+  top:              -8px;
+  position:         relative;
+  background:       url(../img/RecordBrowserTitle.png) top center no-repeat;
+}
+
+#RecordBrowser .title h1 {
+  padding:          30px 0px 0px 0px;
+  margin:           0px auto;
+  width:            976px;
+  color:            #333;
+  text-align:       center;
+/*  font-size:        400%;*/
+}
+
+#RecordBrowser .left {
+  width:            380px;
+  float:            left;
+}
+
+#RecordBrowser .right {
+  width:            598px;
+  float:            right;
+  border:           1px solid #ddd;
+  border-width:     0px 0px 0px 1px;
+}
+
+#RecordBrowser .Navigation {
+  margin: 10px 0px 0px 0px;
+
+}
+
+#RecordBrowser h4 {
+  margin:           0px 0px 10px 0px;
+}
+
+#RecordBrowser fieldset {
+  margin:           20px;
+  padding:          20px;
+  border:           1px solid #e6e6e6;
+}
+
+#RecordBrowser p label{
+  width:            auto;
+  float:            none;
+  text-align:       left;
+  padding:          0px;
+  display:          block;
+}
+
+#RecordBrowser .bottom {
+  clear:            both;
+  position:         relative;
+  width:            980px;
+  height:           8px;
+  margin:           0px 0px -80px 0px;
+  top:              7px;
+  background:       url(../img/RecordBrowserBottom.png) bottom center no-repeat;
+}
+
+#RecordBrowser table {
+  width:            520px;
+  border-collapse:  collapse;
+  margin:           0px auto 10px;
+  height:           300px;
+  border:           1px solid #e6e6e6;
+}
+
+#RecordBrowser thead {
+  height:           1em;
+}
+
+#RecordBrowser tbody {
+/*  overflow:         auto;*/
+  height:           250px;
+}
+
+#RecordBrowser th {
+  margin:           0px;
+  padding:          3px 0px;
+
+  text-align:       center;
+  height:           1em;
+  background-color: #eee;
+/*  color:            white;*/
+}
+
+#RecordBrowser th input {
+  width:            100%;
+}
+
+#RecordBrowser td {
+  margin:           0px;
+  padding:          5px 2px 0px;
+  text-align:       left;
+  color:            #111;
+}
+
+#RecordBrowser td a {
+  display:          block;
+  text-decoration:  none;
+  color:            white;
+}
+
+#RecordBrowser td.sel_column {
+  padding:          0px;
+  margin:           0px;
+  text-align:       left;
+  border-width:     0px 1px 0px 0px;
+  width:            30px;
+}
+
+#RecordBrowser .even {
+  background-color: #f9f9fa;
+}
+
+#RecordBrowser .odd {
+  background-color: #fdfdfd;
+}
+
+#RecordBrowser tr.even:hover {
+  background-color: #f3f3f3;
+}
+
+#RecordBrowser tr.odd:hover {
+  background-color: #f3f3f3;
+}
+
+#RecordBrowser button {
+ float:             left;
+}

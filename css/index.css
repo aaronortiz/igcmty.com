@@ -1,0 +1,185 @@
+@import "menu.css";
+@import "serie.css";
+@import "widgets.css";
+@import "mensajes.css";
+@import "buenanoticia.css";
+@import "ProyectoAndres.css";
+
+body {
+                                                                       
+  font-size: 12px;
+                                                                                                                                        
+  font-family: "Lucida Grande", sans-serif, Verdana, Arial;
+                                                                       
+                                                                       
+  background-color: #e5ecf0;
+  margin:           0px;
+  padding:          0px 0px 20px 0px;
+  
+}
+
+h1 {
+  margin: 3em 0em 1em;
+  padding: 0px 0px 12px;
+  font-weight: normal;
+  font-family: "Myriad Pro", Cantarell, Mako, Helvetica, Arial;
+}
+
+h1.headline {
+  font-size: 72px;
+  text-align: center;  
+  letter-spacing: -.07em;
+}
+
+h1.smaller {
+  font-size: 64px;
+  letter-spacing: -.085em;
+}
+
+h1.sesquipedalian {
+  font-size: 48px;
+  letter-spacing: -.085em;
+}
+
+
+h2 {
+  margin:     2em 0px 1em;
+  padding:    0px;
+  font-size:  164%;
+  font-weight: normal;
+  font-family: "Myriad Pro", Cantarell, Mako, Helvetica, Arial;
+}
+
+h3 {
+font-size: 145%;
+font-family: "Myriad Pro", Cantarell, Mako, Helvetica, Arial;
+}
+
+h4 {
+font-size: 118%;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Myriad Pro", Mako, "Trebuchet MS", sans-serif
+}
+
+
+td {
+  vertical-align: top;
+}
+
+tr td {
+  padding-bottom: .4em;
+}
+
+tr td:last-child {
+  padding-bottom: 0em;
+}
+
+#titulo {
+  font-family: Mako, "Myriad Pro" "Trebuchet MS", Helvetica, Arial;
+  letter-spacing: 0em;
+  color: #ddd;
+  font-size: 12px;
+  padding: 2px 0px;
+  margin: 0px;
+/*  background-color: #2e576e;*/
+  background-color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+#logo {
+  height:     50px;
+  width:      75px;
+  display:    inline;
+  background: url(../img/IGClogo_175x50.png) top left no-repeat;
+}
+
+#content {
+
+  width:      980px;
+  margin:     0px auto;
+  padding:    0px;
+ }
+ 
+#footer { 
+  clear:      both;
+}
+
+#encabezado, #encabezado_ma {
+  width:      980px;
+  margin:     -60px -101px;
+  height:     20px;
+  background: url(../img/white_header.png) top left no-repeat;
+  position:   absolute;
+}
+
+#encabezado h1, #encabezado_ma h1 {
+  padding:    0px 0px;
+  margin:     0px;
+}
+
+#texto, #texto_ma {
+  width:      778px;
+  margin:     40px auto;
+  padding:    40px 100px;
+  background: white;
+  border-left:  1px solid #bbb;
+  border-right: 1px solid #bbb;
+
+}
+
+#multiplica_multiplicadores {
+  width:  750px;
+  height: 281px;
+  margin: 40px auto 0px;
+}
+
+#texto h1 {
+  margin:     30px 0px 0px;
+}
+
+h1:first-child {
+  margin-top: 0em;
+}
+
+#texto h2, #texto_ma h2 {
+  margin:     1.5em 0px 0px;
+}
+
+#texto h3, #texto_ma h3 {
+  margin:     1em 0px 0px;
+}
+
+#texto p, #texto_ma p {
+  margin:     0px 0px 2em;
+  line-height: 1.6em;
+}
+
+#pie, #pie_ma {
+  width:      980px;
+  margin:     50px -101px -60px;
+  height:     20px;
+  background: url(../img/RecordBrowserBottom.png) top left no-repeat;
+  clear:      both;
+}
+
+#bottomtext {
+  font-size: 78%;
+  color:     #555;
+  text-align: center;
+}
+
+a.no_border img {
+  border: none;
+}
+
+sup {
+  font-size: 60%;
+}
+
+#texto_ma h1 {
+  margin-top: 0em;
+}

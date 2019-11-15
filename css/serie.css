@@ -1,0 +1,70 @@
+/* Remove Padding */
+
+
+/*#banner {
+  height:     490px;
+  width:      980px;
+  margin:     0px auto 30px;
+  background: url(../img/vencedor.jpg) top left no-repeat;  
+}*/
+
+#texto h1.headline, #texto h2.subhead, #texto h3.coltitle {
+  padding: 0;
+  margin:  0;
+}
+
+#texto h2.subhead {
+  text-align: center;
+  font-size:  36px;
+}
+
+.banner {
+  margin: 30px 15px 10px;
+  width:  750px;
+}
+
+#temas {
+  width: 750px;
+  padding: 0px;
+  margin: 40px auto -60px;
+}
+
+#temas th {
+  padding-bottom: 20px;
+}
+
+#temas .column {
+  width: 213px;
+  padding: 0px 0px 40px;
+  text-align: center;
+}
+
+#temas td.spacer {
+  width: 36px;
+}
+
+#fecha_y_desc .datestamp {
+  font-family: "Myriad Pro", Cantarell;
+  padding: 0px 0px 16px 0px;
+}
+
+#fecha_y_desc td.tema {
+  padding: 8px 0px 8px 8px;
+}
+
+.datestamp .datestamp_day {
+  font-size: 24px;
+}
+
+.tema {
+  text-align: left;
+}
+
+#siguenos ul {
+  text-align: left;
+  list-style: none;
+}
+
+#siguenos ul li {
+  padding: 0px 0px 10px;
+}

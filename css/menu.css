@@ -1,0 +1,158 @@
+#menu, #menu_ar {
+  height:     40px;
+  width:      980px;
+  margin:     20px auto -10px;
+  padding:    0px;
+/*  background: url(../img/top-bar2010.png) top left no-repeat;*/
+  color:      #fff;
+  font-family: "Myriad Pro", Mako, "Tahoma" "Geneva" sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -0.08em;
+}
+
+#menu ul, #menu_ar ul {
+  padding:    0px 0px 0px 0px;
+  position:   relative;
+}
+
+#menu ul li, #menu_ar ul li {
+  display:    inline;
+  padding:    0px;
+  margin:     0px 0px;
+  width:      122px;
+  text-align: center;
+  float:      left;
+}
+
+#menu ul li a, #menu_ar ul li a {
+  color: #507c94;
+  text-decoration: none;
+  padding:         0px;
+  margin:          0px;
+  top:             0px;
+  position:        relative;
+}
+
+#menu ul li a:hover, #menu_ar ul li a:hover {
+  color: #00406a;
+}
+
+#menu ul li img, #menu_ar ul li img {
+  border:          0px;
+  padding:         0px;
+  margin:          0px;
+}
+
+.inicio {
+/*  width: 200px;*/
+
+}
+
+.inicio, .grupos, .mensajes, .contacto, .nosotros, .donaciones, .enlaces, .eventos{
+/*  background: url(../img/top-bar2010.png) 0px -0px no-repeat;*/
+  width: 122px;
+  height: 40px;
+}
+
+
+/* ELEMENTOS DEL MENU * /
+
+.mensajes {
+  background-position: -122px 0px;
+}
+
+.grupos {
+  background-position: -244px 0px;
+}
+
+.contacto {
+  background-position: -366px 0px;
+}
+
+.nosotros {
+  background-position: -488px 0px;
+}
+
+.donaciones {
+  background-position: -610px 0px;
+}
+
+.enlaces {
+  background-position: -732px 0px;
+}
+
+.eventos {
+  background-position: -854px 0px;
+}
+
+
+/* SELECCIONADOS * /
+
+.mensajes.current {
+  background-position: -122px -80px;
+}
+
+.grupos.current {
+  background-position: -244px -80px;
+}
+
+.contacto.current {
+  background-position: -366px -80px;
+}
+
+.nosotros.current {
+  background-position: -488px -80px;
+}
+
+.donaciones.current {
+  background-position: -610px -80px;
+}
+
+.enlaces.current {
+  background-position: -732px -80px;
+}
+
+.eventos.current {
+  background-position: -854px -80px;
+}
+
+
+/* COMPORTAMIENTO * /
+
+.mensajes:hover {
+  background-position: -122px -40px;
+}
+
+.grupos:hover {
+  background-position: -244px -40px;
+}
+
+.contacto:hover {
+  background-position: -366px -40px;
+}
+
+.nosotros:hover {
+  background-position: -488px -40px;
+}
+
+.donaciones:hover {
+  background-position: -611px -40px;
+}
+
+.enlaces:hover {
+  background-position: -732px -40px;
+}
+
+.eventos:hover {
+  background-position: -854px -40px;
+}
+
+a .inicio, a .grupos, a .mensajes, a .contacto, a.nosotros, a.donaciones, a.enlaces, a.eventos {
+  background-position-y: 0px;
+}
+
+#menu ul li a:visited {
+  color:      #333;
+}*/

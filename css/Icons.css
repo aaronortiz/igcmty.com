@@ -1,0 +1,78 @@
+.icon_open, .icon_new, .icon_delete, .icon_search, .icon_first, .icon_prev, 
+.icon_next, .icon_last, .icon_exit, .icon_menu, .icon_delete_search, .icon_save,
+.icon_cancel, .icon_enter, .icon_timestamp, .icon_invoice, .icon_report {
+  width:            16px;
+  height:           16px;
+  display:          block;
+  float:            left;
+  padding:          0px 0px 0px 0px;
+  margin:           0px 2px 0px 0px;
+}
+
+.icon_open {
+  background:       url(../img/icons/application_form_edit.png) top left no-repeat;
+}
+
+.icon_new {
+  background:       url(../img/icons/application_form_add.png) top left no-repeat;
+}
+
+.icon_delete {
+  background:       url(../img/icons/application_form_delete.png) top left no-repeat;
+}
+
+.icon_search {
+  background:       url(../img/icons/magnifier.png) top left no-repeat;
+}
+
+.icon_delete_search {
+  background:       url(../img/icons/magnifier_zoom_out.png) top left no-repeat;
+}
+
+.icon_first {
+  background:       url(../img/icons/resultset_first.png) top left no-repeat;
+}
+
+.icon_prev {
+  background:       url(../img/icons/resultset_previous.png) top left no-repeat;
+}
+
+.icon_next {
+  background:       url(../img/icons/resultset_next.png) top left no-repeat;
+}
+
+.icon_last {
+  background:       url(../img/icons/resultset_last.png) top left no-repeat;
+}
+
+.icon_exit {
+  background:       url(../img/icons/door_out.png) top left no-repeat;
+}
+
+.icon_menu {
+  background:       url(../img/icons/house_go.png) top left no-repeat;
+}
+
+.icon_save {
+  background:       url(../img/icons/disk.png) top left no-repeat;
+}
+
+.icon_cancel {
+  background:       url(../img/icons/cancel.png) top left no-repeat;
+}
+
+.icon_enter {
+  background:       url(../img/icons/door_in.png) top left no-repeat;
+}
+
+.icon_timestamp {
+  background:       url(../img/icons/clock_link.png) top left no-repeat;
+}
+
+.icon_invoice {
+  background:       url(../img/icons/coins.png) top left no-repeat;
+}
+
+.icon_report {
+  background:       url(../img/icons/database_lightning.png) top left no-repeat;
+}

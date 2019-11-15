@@ -1,0 +1,106 @@
+#mensajes {
+  width:      980px;
+  margin:     40px auto 0px;
+  padding:    20px 0px 3px;
+  background: #1a1a1a;
+}
+
+#mensajes h1 {
+  margin:     0em 0em 20px 0em;
+}
+
+.dark_head {
+  color:      #f0f0f0;
+  font-size: 72px;
+  text-align: center;
+  letter-spacing: -.07em;  
+}
+
+#encabezado_oscuro {
+  width:      980px;
+  margin:     -70px -101px;
+  height:     20px;
+  background: url(../img/white_header.png) top left no-repeat;
+  position:   absolute;
+}
+
+
+#encabezado_oscuro {
+  margin:     -40px 0px 0px 0px;
+  background: url(../img/dark_header.png) top left no-repeat;
+}
+
+#vimeo_screen {
+  height: 360px;
+  width:  640px;
+  background: black;
+  float: left;
+}
+
+#message_list {
+  height: 360px;
+  width:  340px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  float: right;
+}
+
+#message_list table {
+  border-collapse: collapse;
+}
+
+#message_list td.serie {
+  border-top: 25px solid #004f80;
+  padding: 10px 10px 10px 20px;
+  color:   #e5e5e5;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#message_list td.conferencia {
+  width: 211px;
+  padding: 4px 10px 4px 40px;
+  color: #cccccc;
+}
+
+#message_list td.MP3, #message_list td.Video {
+  width: 30px;
+  color: #cccccc;
+}
+
+#message_list tr.even {
+  background: #008ee5;
+}
+
+#message_list tr.odd {
+  background: #0095f2;
+}
+
+#rss_section {
+  clear:  both;
+  margin: 0px;
+  padding: 10px 40px 0px;
+  color:   #888;
+  text-align: center;
+}
+
+#rss_section a {
+  color: #aaa;
+}
+
+#rss_section a:hover {
+  color: #eee;
+}
+
+#rss_section b {
+  font-weight: bold;
+  color:       #999;
+}
+
+#pie_oscuro {
+  width:      980px;
+  height:     20px;
+  clear:      both;
+  margin:     -10px auto 0px;
+  background: url(../img/dark_footer.png) top left no-repeat;
+}

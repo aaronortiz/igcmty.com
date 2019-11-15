@@ -1,0 +1,66 @@
+<?php 
+ 
+  header('Content-type: text/xml');
+  
+?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Iglesia Gran Comision Monterrey, Mensajes en Audio</title>
+    <description>Un mensaje semanal de la Iglesia Gran Comisi&#x26;oacute;n en Monterrey, Nuevo Le&#x26;oacute;n, M&#x26;eacute;xico.</description>
+    <link>http://www.grancomision.org.mx/mensajes.php</link>
+    <copyright>Attribution-NonCommercial-NoDerivs 3.0 Unported</copyright>
+    <atom:link href="http://www.grancomision.org.mx/mensajes_audio.xml" rel="self" type="application/rss+xml" />
+<?php
+
+  include('listar_estudios.php');
+
+  foreach((array) $Series as $id_serie => $Serie) {
+    foreach((array) $Serie["conferencias"] as $id_mensaje => $Mensaje) { 
+    
+      if (strlen($Mensaje["MP3"])>0) {
+    
+        $Title       = htmlentities(htmlentities($Mensaje["titulo"]));
+        $Description = htmlentities($Mensaje["resumen"]);
+        
+        $Author      = $Mensaje["expositor"];
+        $PubDate     = $Mensaje["fecha"];
+
+        if (strlen($Description)==0) {
+          $Description = "$Title: un mensaje de la Iglesia Gran Comisi&#x26;oacute;n Monterrey, presentado en $PubDate por $Author. Parte de la serie '" 
+                       . htmlentities(htmlentities($Serie["titulo"])) . "'.";
+        }        
+        
+        $Link        = $Mensaje["MP3"];
+        
+        $Enclosure = "";
+        $FileSize  = 0;
+        
+        if(substr($Link, 0, 31) == "http://www.grancomision.org.mx/") {
+          $Location = urldecode(substr($Link, 31));
+          
+          $Temp = error_reporting(0);
+          $FileSize = filesize($Location);
+          error_reporting($Temp);
+          
+          if ($FileSize > 0) {
+            $Enclosure = "<enclosure url=\"$Link\" length=\"$FileSize\" type=\"audio/mpeg\" />";
+          }  
+        } 
+              
+?>
+    <item>  
+      <title><?php print($Title); ?></title>
+      <description><?php print($Description . " &#x3C;a href=\"$Link\"&#x3E;Escuchar Mensaje&#x3C;/a&#x3E;"); ?></description>
+      <link><?php print($Link); ?></link>
+      <author>&#x3C;pastores@grancomision.org.mx&#x3E; (<?php print($Author); ?>)</author>
+      <?php if(!empty($PubDate)) { ?><pubDate><?php print(date("r", strtotime($PubDate))); ?></pubDate><?php } ?>
+<?php 
+      print("\n      $Enclosure"); 
+?>  
+    </item>
+<?php
+      }
+    }    
+  }
+
+?>  </channel>
+</rss>

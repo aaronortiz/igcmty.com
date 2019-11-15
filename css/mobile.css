@@ -1,0 +1,60 @@
+#encabezado_ma, #pie_ma, #bottomtext {
+  display: none;
+}
+
+#texto_ma {
+  width: 30em;
+  margin: auto;
+  padding: 4em;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  moz-border-radius: 6px;
+}
+
+#texto_ma h1 {
+  margin-top: 0em;
+}
+
+#menu_ar {
+  width:      30em;
+  height:     340px;
+  margin:     -10px auto 0px;
+  padding:    0px;
+  color:      #fff;
+  font-family: "Myriad Pro", Mako, "Tahoma" "Geneva" sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -0.08em;
+}
+
+#menu_ar #menu_items {
+  width:      24em;
+  height:     320px;
+  margin:     auto;
+
+}
+
+#menu_ar ul {
+  padding:    0px 0px 0px 0px;
+  position:   relative;
+}
+
+#menu_ar ul li {
+  display:    inline;
+  padding:    0px;
+  margin:     5px 0px;
+  text-align: center;
+  float:      left;
+  left:       0;
+  border-bottom: 1px solid #ddd;
+  width:      24em;
+  height:     30px;
+}
+
+#menu_ar ul li a {
+  width:      24em;
+  padding:    0px;
+  height:     30px;
+  display:    block;
+}

@@ -1,0 +1,27 @@
+#menu ul {
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+  height:  40px;
+}
+
+#searchbox {
+  width: 150px;
+  clear: both;
+  margin: -55px 0px 0px 0px;  
+}
+
+#searchbox input {
+  margin:  10px 0px 0px 8px;
+}
+
+#igcmty_youtube {
+  padding: 10px 0px 0px 20px;
+  margin: 0px 40px 0px -10px;
+  
+}
+
+
+#youtube_player {
+  margin: 10px;
+  float: right;
+}

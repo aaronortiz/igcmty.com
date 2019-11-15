@@ -1,0 +1,31 @@
+[01-Mar-2011 12:37:46] PHP Parse error:  syntax error, unexpected '}' in /home4/aeortizc/public_html/igcmty/Data/HandleLogin.php on line 39
+[01-Mar-2011 12:41:12] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'aeortizc'@'localhost' (using password: NO) in /home4/aeortizc/public_html/igcmty/Data/MySQL.php on line 113
+[01-Mar-2011 12:41:12] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/aeortizc/public_html/igcmty/Data/MySQL.php:113) in /home4/aeortizc/public_html/igcmty/Data/HandleLogin.php on line 36
+[01-Mar-2011 12:42:57] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'aeortizc_aeortiz'@'localhost' (using password: YES) in /home4/aeortizc/public_html/igcmty/Data/MySQL.php on line 113
+[01-Mar-2011 12:42:57] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/aeortizc/public_html/igcmty/Data/MySQL.php:113) in /home4/aeortizc/public_html/igcmty/Data/HandleLogin.php on line 41
+[01-Mar-2011 12:44:18] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'aeortizc_aeortiz'@'localhost' (using password: YES) in /home4/aeortizc/public_html/igcmty/Data/MySQL.php on line 113
+[01-Mar-2011 12:44:18] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/aeortizc/public_html/igcmty/Data/MySQL.php:113) in /home4/aeortizc/public_html/igcmty/Data/HandleLogin.php on line 41
+[01-Mar-2011 12:50:30] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'aeortizc_aeortiz'@'localhost' (using password: YES) in /home4/aeortizc/public_html/igcmty/Data/MySQL.php on line 113
+[01-Mar-2011 12:50:30] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/aeortizc/public_html/igcmty/Data/MySQL.php:113) in /home4/aeortizc/public_html/igcmty/Data/HandleLogin.php on line 37
+[18-May-2014 03:29:41 America/Denver] PHP Notice:  Undefined index: Username in /home1/aeortizc/public_html/igcmty/Data/HandleLogin.php on line 10
+[18-May-2014 03:30:12 America/Denver] PHP Notice:  Undefined index: Username in /home1/aeortizc/public_html/igcmty/Data/HandleLogin.php on line 10
+[30-Nov-2017 14:09:23 America/Denver] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'aeortizc_aeortizc'@'localhost' (using password: YES) in /home1/aeortizc/public_html/igcmty/Data/MySQL.php on line 112
+[30-Nov-2017 14:09:45 America/Denver] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'aeortizc_aeortizc'@'localhost' (using password: YES) in /home1/aeortizc/public_html/igcmty/Data/MySQL.php on line 112
+[30-Nov-2017 14:10:38 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home1/aeortizc/public_html/igcmty/Data/MySQL.php on line 103
+[30-Nov-2017 14:10:42 America/Denver] PHP Notice:  Undefined index: Username in /home1/aeortizc/public_html/igcmty/Data/HandleLogin.php on line 10
+[30-Nov-2017 14:16:06 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home1/aeortizc/public_html/igcmty/Data/MySQL.php on line 103
+[30-Nov-2017 14:17:21 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home1/aeortizc/public_html/igcmty/Data/MySQL.php on line 103
+[02-Dec-2017 14:57:39 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home1/aeortizc/public_html/igcmty/Data/MySQL.php on line 103
+[02-Dec-2017 16:32:11 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home1/aeortizc/public_html/igcmty/Data/MySQL.php on line 103
+[02-Dec-2017 16:35:15 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home1/aeortizc/public_html/igcmty/Data/MySQL.php on line 103
+[02-Dec-2017 21:44:10 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home1/aeortizc/public_html/igcmty/Data/MySQL.php on line 103
+[02-Dec-2017 21:44:49 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home1/aeortizc/public_html/igcmty/Data/MySQL.php on line 103
+[06-Dec-2017 18:43:54 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home1/aeortizc/public_html/igcmty/Data/MySQL.php on line 103
+[10-Dec-2017 10:24:40 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home1/aeortizc/public_html/igcmty/Data/MySQL.php on line 103
+[18-Dec-2017 21:27:51 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home1/aeortizc/public_html/igcmty/Data/MySQL.php on line 103
+[21-Dec-2017 13:54:00 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home1/aeortizc/public_html/igcmty/Data/MySQL.php on line 103
+[21-Dec-2017 14:02:37 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home1/aeortizc/public_html/igcmty/Data/MySQL.php on line 103
+[24-Dec-2017 00:22:49 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home1/aeortizc/public_html/igcmty/Data/MySQL.php on line 103
+[06-Jan-2018 22:31:11 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home1/aeortizc/public_html/igcmty/Data/MySQL.php on line 103
+[08-Jan-2018 10:40:14 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home1/aeortizc/public_html/igcmty/Data/MySQL.php on line 103
+[13-Jan-2018 20:33:13 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home1/aeortizc/public_html/igcmty/Data/MySQL.php on line 103

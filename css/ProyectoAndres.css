@@ -1,0 +1,45 @@
+#proyecto_andres {
+  width: 750px;
+  height: 404px;
+  background: url(../img/201109_click2.jpg) top left no-repeat;
+  margin: 20px auto 0px;
+  position: relative;
+}
+
+#proyecto_andres a {
+  width: 172px;
+  height: 172px;
+  position: absolute;
+  display: block;
+  text-decoration: none;
+}
+
+#proyecto_andres .buena_noticia {
+  top: 190px;
+  left: 136px;
+  background: transparent;
+}
+
+#proyecto_andres .buena_noticia:hover {
+  background: url(../img/bluehalo.png) top left no-repeat;
+}
+
+#proyecto_andres .contacto {
+  top: 162px;
+  left: 289px;
+  background: transparent;
+}
+
+#proyecto_andres .contacto:hover {
+  background: url(../img/redhalo.png) top left no-repeat;
+}
+
+#proyecto_andres .grupos {
+  top: 191px;
+  left: 439px;
+  background: transparent;
+}
+
+#proyecto_andres .grupos:hover {
+  background: url(../img/greenhalo.png) top left no-repeat;
+}

@@ -1,0 +1,132 @@
+#RecordEditor {
+  width:            980px;
+  margin:           140px auto 8px;
+  background:       url(../img/RecordBrowserBackground.png) top left repeat-y;
+  background-color: #fff;
+}
+
+#RecordEditor .title {
+  margin:           -100px 0px 0px 0px;
+  height:           100px;
+  top:              -8px;
+  position:         relative;
+  background:       url(../img/RecordBrowserTitle.png) top center no-repeat;
+}
+
+#RecordEditor .title h1 {
+  padding:          30px 0px 0px 0px;
+  width:            976px;
+  margin:           0px auto;
+  color:            #333;
+  text-align:       center;
+}
+
+#RecordEditor .title h2 {
+  padding:          0px 0px 0px 0px;
+  width:            976px;
+  margin:           0px auto;
+  color:            #333;
+  text-align:       center;
+}
+
+#RecordEditor .bottom {
+  clear:            both;
+  position:         relative;
+  width:            980px;
+  height:           8px;
+  margin:           0px 0px -100px 0px;
+  top:              7px;
+  background:       url(../img/RecordBrowserBottom.png) bottom center no-repeat;
+}
+
+#RecordEditor fieldset {
+  width:            815px;
+  margin:           5px auto;
+}
+
+#RecordEditor fieldset.ButtonPanel {
+  margin:           10px 40px 20px 0px;
+  float:            right;
+  padding:          0px;
+  width:            auto;
+  border:           0px; 
+}
+
+#RecordEditor button {
+  float:            left;
+}
+
+#RecordEditor ul.error_list {
+  border:           1px solid #a00;
+  color:            #c00;
+  width:            800px;
+  margin:           10px auto;
+  padding:          10px;
+  text-align:       left;
+}
+
+#RecordEditor ul.error_list li {
+  margin-left:      20px;
+}
+
+#RecordEditor .checkbox {
+  margin:           10px 0px;
+}
+
+#RecordEditor .error_msg {
+  color:            #c00;
+  width:            800px;
+  margin:           10px auto;
+  padding:          0px 10px;
+  font-size:        78%;
+}
+
+#RecordEditor .column1 {
+  width:            405px;
+  float:            left;
+  margin:           20px 0px 0px 30px;
+  padding:          0px;
+}
+
+#RecordEditor .column2 {
+  width:            405px;
+  float:            right;
+  margin:           20px 30px 0px 0px;
+  padding:          0px;
+}
+
+#RecordEditor .column1 fieldset, #RecordEditor .column2 fieldset {
+  width:            382px;
+  margin:           0px 0px 30px 0px;
+}
+
+#RecordEditor .columnbottom {
+  clear:            both;
+}
+
+#RecordEditor p {
+  clear:            both;
+}
+
+#RecordEditor label {
+  margin:           0px 0px 15px 0px;
+  padding-right:    1em;
+  width:            120px;
+  float:            left;
+  text-align:       right;
+}
+
+#RecordEditor .columnbottom textarea {
+  width:            75%;
+  float:            left;
+  margin:           10px;
+}
+
+#RecordEditor textarea {
+  width:            630px;
+  border:           1px solid #eee;
+}
+
+#RecordEditor .TimestampList td.openlabel {
+  width:            240px;
+}
