@@ -3607,7 +3607,7 @@ CREATE TABLE `v_mensajes_medios_video` (
 --
 DROP TABLE IF EXISTS `v_eventos`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`aeortizc`@`localhost` SQL SECURITY DEFINER VIEW `v_eventos`  AS  select `eventos`.`id_evento` AS `id_evento`,`eventos`.`titulo_evento` AS `titulo_evento`,`eventos`.`subtitulo_evento` AS `subtitulo_evento`,`eventos`.`resumen_evento` AS `resumen_evento`,`eventos`.`fecha` AS `fecha`,year(`eventos`.`fecha`) AS `an_o`,month(`eventos`.`fecha`) AS `mes`,dayofmonth(`eventos`.`fecha`) AS `dia`,`eventos`.`fecha_fin` AS `fecha_fin`,year(`eventos`.`fecha_fin`) AS `an_o_fin`,month(`eventos`.`fecha_fin`) AS `mes_fin`,dayofmonth(`eventos`.`fecha_fin`) AS `dia_fin`,`eventos`.`horario` AS `horario`,`eventos`.`lugar` AS `lugar`,`eventos`.`precio` AS `precio`,`eventos`.`ocultar_precio` AS `ocultar_precio` from `eventos` WITH CASCADED CHECK OPTION ;
+CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `v_eventos`  AS  select `eventos`.`id_evento` AS `id_evento`,`eventos`.`titulo_evento` AS `titulo_evento`,`eventos`.`subtitulo_evento` AS `subtitulo_evento`,`eventos`.`resumen_evento` AS `resumen_evento`,`eventos`.`fecha` AS `fecha`,year(`eventos`.`fecha`) AS `an_o`,month(`eventos`.`fecha`) AS `mes`,dayofmonth(`eventos`.`fecha`) AS `dia`,`eventos`.`fecha_fin` AS `fecha_fin`,year(`eventos`.`fecha_fin`) AS `an_o_fin`,month(`eventos`.`fecha_fin`) AS `mes_fin`,dayofmonth(`eventos`.`fecha_fin`) AS `dia_fin`,`eventos`.`horario` AS `horario`,`eventos`.`lugar` AS `lugar`,`eventos`.`precio` AS `precio`,`eventos`.`ocultar_precio` AS `ocultar_precio` from `eventos` WITH CASCADED CHECK OPTION ;
 
 -- --------------------------------------------------------
 
@@ -3616,7 +3616,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`aeortizc`@`localhost` SQL SECURITY DEFINER V
 --
 DROP TABLE IF EXISTS `v_expositores`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`aeortizc`@`localhost` SQL SECURITY DEFINER VIEW `v_expositores`  AS  select `expositores`.`id_expositor` AS `id_expositor`,`expositores`.`nombres` AS `nombres`,`expositores`.`apellidos` AS `apellidos`,concat(`expositores`.`nombres`,' ',`expositores`.`apellidos`) AS `expositor` from `expositores` WITH CASCADED CHECK OPTION ;
+CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `v_expositores`  AS  select `expositores`.`id_expositor` AS `id_expositor`,`expositores`.`nombres` AS `nombres`,`expositores`.`apellidos` AS `apellidos`,concat(`expositores`.`nombres`,' ',`expositores`.`apellidos`) AS `expositor` from `expositores` WITH CASCADED CHECK OPTION ;
 
 -- --------------------------------------------------------
 
@@ -3625,7 +3625,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`aeortizc`@`localhost` SQL SECURITY DEFINER V
 --
 DROP TABLE IF EXISTS `v_grupos`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`aeortizc`@`localhost` SQL SECURITY DEFINER VIEW `v_grupos`  AS  select `g`.`id_grupo` AS `id_grupo`,`g`.`nombre` AS `nombre`,`g`.`ubicacion` AS `ubicacion`,`g`.`dia_reunion` AS `dia_reunion`,`g`.`hora_reunion` AS `hora_reunion`,`g`.`id_lider_grupo` AS `id_lider_grupo`,`g`.`url` AS `url`,concat(`gl`.`nombres`,' ',`gl`.`apellidos`) AS `lider_grupo`,`gl`.`nombres` AS `nombres`,`gl`.`apellidos` AS `apellidos`,`gl`.`telefono` AS `telefono`,`gl`.`email` AS `email` from (`grupos` `g` join `grupos_lideres` `gl` on((`gl`.`id_lider_grupo` = `g`.`id_lider_grupo`))) WITH CASCADED CHECK OPTION ;
+CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `v_grupos`  AS  select `g`.`id_grupo` AS `id_grupo`,`g`.`nombre` AS `nombre`,`g`.`ubicacion` AS `ubicacion`,`g`.`dia_reunion` AS `dia_reunion`,`g`.`hora_reunion` AS `hora_reunion`,`g`.`id_lider_grupo` AS `id_lider_grupo`,`g`.`url` AS `url`,concat(`gl`.`nombres`,' ',`gl`.`apellidos`) AS `lider_grupo`,`gl`.`nombres` AS `nombres`,`gl`.`apellidos` AS `apellidos`,`gl`.`telefono` AS `telefono`,`gl`.`email` AS `email` from (`grupos` `g` join `grupos_lideres` `gl` on((`gl`.`id_lider_grupo` = `g`.`id_lider_grupo`))) WITH CASCADED CHECK OPTION ;
 
 -- --------------------------------------------------------
 
@@ -3634,7 +3634,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`aeortizc`@`localhost` SQL SECURITY DEFINER V
 --
 DROP TABLE IF EXISTS `v_grupos_lideres`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`aeortizc`@`localhost` SQL SECURITY DEFINER VIEW `v_grupos_lideres`  AS  select `grupos_lideres`.`id_lider_grupo` AS `id_lider_grupo`,concat(`grupos_lideres`.`nombres`,' ',`grupos_lideres`.`apellidos`) AS `lider`,`grupos_lideres`.`nombres` AS `nombres`,`grupos_lideres`.`apellidos` AS `apellidos`,`grupos_lideres`.`telefono` AS `telefono`,`grupos_lideres`.`email` AS `email` from `grupos_lideres` WITH CASCADED CHECK OPTION ;
+CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `v_grupos_lideres`  AS  select `grupos_lideres`.`id_lider_grupo` AS `id_lider_grupo`,concat(`grupos_lideres`.`nombres`,' ',`grupos_lideres`.`apellidos`) AS `lider`,`grupos_lideres`.`nombres` AS `nombres`,`grupos_lideres`.`apellidos` AS `apellidos`,`grupos_lideres`.`telefono` AS `telefono`,`grupos_lideres`.`email` AS `email` from `grupos_lideres` WITH CASCADED CHECK OPTION ;
 
 -- --------------------------------------------------------
 
@@ -3643,7 +3643,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`aeortizc`@`localhost` SQL SECURITY DEFINER V
 --
 DROP TABLE IF EXISTS `v_imagenes`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`aeortizc`@`localhost` SQL SECURITY DEFINER VIEW `v_imagenes`  AS  select `s`.`id_serie` AS `id_serie`,`s`.`serie` AS `serie`,`sm`.`id_medio` AS `id_medio`,`mi`.`altura` AS `altura`,`mi`.`ancho` AS `ancho`,`mi`.`texto_alterno` AS `texto_alterno`,`mi`.`src` AS `src` from ((`series` `s` join `series_medios` `sm` on((`s`.`id_serie` = `sm`.`id_serie`))) join `medios_imagen` `mi` on((`sm`.`id_medio` = `mi`.`id_medio`))) WITH CASCADED CHECK OPTION ;
+CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `v_imagenes`  AS  select `s`.`id_serie` AS `id_serie`,`s`.`serie` AS `serie`,`sm`.`id_medio` AS `id_medio`,`mi`.`altura` AS `altura`,`mi`.`ancho` AS `ancho`,`mi`.`texto_alterno` AS `texto_alterno`,`mi`.`src` AS `src` from ((`series` `s` join `series_medios` `sm` on((`s`.`id_serie` = `sm`.`id_serie`))) join `medios_imagen` `mi` on((`sm`.`id_medio` = `mi`.`id_medio`))) WITH CASCADED CHECK OPTION ;
 
 -- --------------------------------------------------------
 
@@ -3652,7 +3652,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`aeortizc`@`localhost` SQL SECURITY DEFINER V
 --
 DROP TABLE IF EXISTS `v_mensajes`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`aeortizc`@`localhost` SQL SECURITY DEFINER VIEW `v_mensajes`  AS  select `m`.`id_mensaje` AS `id_mensaje`,`m`.`id_serie` AS `id_serie`,`m`.`mensaje` AS `mensaje`,`m`.`resumen` AS `resumen`,`m`.`id_expositor` AS `id_expositor`,`m`.`fecha` AS `fecha`,`s`.`serie` AS `serie`,`e`.`nombres` AS `expositor_nombres`,`e`.`apellidos` AS `expositor_apellidos`,concat(`e`.`nombres`,' ',`e`.`apellidos`) AS `expositor`,year(`m`.`fecha`) AS `an_o`,month(`m`.`fecha`) AS `mes`,dayofmonth(`m`.`fecha`) AS `dia`,ifnull(`v_mensajes_medios_audio`.`id_medio`,-(1)) AS `id_medio_audio`,ifnull(`v_mensajes_medios_audio`.`M3U`,'') AS `m3u`,ifnull(`v_mensajes_medios_video`.`id_medio`,-(1)) AS `id_medio_video`,ifnull(`v_mensajes_medios_video`.`embed`,'') AS `video_embed`,ifnull(`v_mensajes_medios_video`.`video_url`,'') AS `video_url` from ((((`mensajes` `m` join `series` `s` on((`s`.`id_serie` = `m`.`id_serie`))) join `expositores` `e` on((`e`.`id_expositor` = `m`.`id_expositor`))) left join `v_mensajes_medios_audio` on((`m`.`id_mensaje` = `v_mensajes_medios_audio`.`id_mensaje`))) left join `v_mensajes_medios_video` on((`m`.`id_mensaje` = `v_mensajes_medios_video`.`id_mensaje`))) ;
+CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `v_mensajes`  AS  select `m`.`id_mensaje` AS `id_mensaje`,`m`.`id_serie` AS `id_serie`,`m`.`mensaje` AS `mensaje`,`m`.`resumen` AS `resumen`,`m`.`id_expositor` AS `id_expositor`,`m`.`fecha` AS `fecha`,`s`.`serie` AS `serie`,`e`.`nombres` AS `expositor_nombres`,`e`.`apellidos` AS `expositor_apellidos`,concat(`e`.`nombres`,' ',`e`.`apellidos`) AS `expositor`,year(`m`.`fecha`) AS `an_o`,month(`m`.`fecha`) AS `mes`,dayofmonth(`m`.`fecha`) AS `dia`,ifnull(`v_mensajes_medios_audio`.`id_medio`,-(1)) AS `id_medio_audio`,ifnull(`v_mensajes_medios_audio`.`M3U`,'') AS `m3u`,ifnull(`v_mensajes_medios_video`.`id_medio`,-(1)) AS `id_medio_video`,ifnull(`v_mensajes_medios_video`.`embed`,'') AS `video_embed`,ifnull(`v_mensajes_medios_video`.`video_url`,'') AS `video_url` from ((((`mensajes` `m` join `series` `s` on((`s`.`id_serie` = `m`.`id_serie`))) join `expositores` `e` on((`e`.`id_expositor` = `m`.`id_expositor`))) left join `v_mensajes_medios_audio` on((`m`.`id_mensaje` = `v_mensajes_medios_audio`.`id_mensaje`))) left join `v_mensajes_medios_video` on((`m`.`id_mensaje` = `v_mensajes_medios_video`.`id_mensaje`))) ;
 
 -- --------------------------------------------------------
 
@@ -3661,7 +3661,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`aeortizc`@`localhost` SQL SECURITY DEFINER V
 --
 DROP TABLE IF EXISTS `v_mensajes_medios_audio`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`aeortizc`@`localhost` SQL SECURITY DEFINER VIEW `v_mensajes_medios_audio`  AS  select `mensajes_medios`.`id_mensaje` AS `id_mensaje`,`mensajes_medios`.`id_medio` AS `id_medio`,`medios_audio`.`M3U` AS `M3U` from ((`mensajes_medios` join `medios` on((`mensajes_medios`.`id_medio` = `medios`.`id_medio`))) join `medios_audio` on((`medios`.`id_medio` = `medios_audio`.`id_medio`))) WITH CASCADED CHECK OPTION ;
+CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `v_mensajes_medios_audio`  AS  select `mensajes_medios`.`id_mensaje` AS `id_mensaje`,`mensajes_medios`.`id_medio` AS `id_medio`,`medios_audio`.`M3U` AS `M3U` from ((`mensajes_medios` join `medios` on((`mensajes_medios`.`id_medio` = `medios`.`id_medio`))) join `medios_audio` on((`medios`.`id_medio` = `medios_audio`.`id_medio`))) WITH CASCADED CHECK OPTION ;
 
 -- --------------------------------------------------------
 
@@ -3670,7 +3670,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`aeortizc`@`localhost` SQL SECURITY DEFINER V
 --
 DROP TABLE IF EXISTS `v_mensajes_medios_video`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`aeortizc`@`localhost` SQL SECURITY DEFINER VIEW `v_mensajes_medios_video`  AS  select `mensajes_medios`.`id_mensaje` AS `id_mensaje`,`mensajes_medios`.`id_medio` AS `id_medio`,`medios_video`.`embed` AS `embed`,`medios_video`.`video_url` AS `video_url` from ((`mensajes_medios` join `medios` on((`mensajes_medios`.`id_medio` = `medios`.`id_medio`))) join `medios_video` on((`medios`.`id_medio` = `medios_video`.`id_medio`))) WITH CASCADED CHECK OPTION ;
+CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `v_mensajes_medios_video`  AS  select `mensajes_medios`.`id_mensaje` AS `id_mensaje`,`mensajes_medios`.`id_medio` AS `id_medio`,`medios_video`.`embed` AS `embed`,`medios_video`.`video_url` AS `video_url` from ((`mensajes_medios` join `medios` on((`mensajes_medios`.`id_medio` = `medios`.`id_medio`))) join `medios_video` on((`medios`.`id_medio` = `medios_video`.`id_medio`))) WITH CASCADED CHECK OPTION ;
 
 --
 -- Indexes for dumped tables
